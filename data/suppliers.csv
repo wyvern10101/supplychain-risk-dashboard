@@ -1,0 +1,11 @@
+supplier_id,supplier_name,lead_time_days,defect_rate,on_time_rate
+SUP-001,Supplier A,5,0.0071,0.7958
+SUP-002,Supplier B,27,0.101,0.4588
+SUP-003,Supplier C,20,0.0056,0.8747
+SUP-004,Supplier D,14,0.0332,0.8987
+SUP-005,Supplier E,14,0.0193,0.8318
+SUP-006,Supplier F,26,0.0172,0.9704
+SUP-007,Supplier G,25,0.1047,0.4809
+SUP-008,Supplier H,21,0.0383,0.9053
+SUP-009,Supplier I,8,0.0177,0.99
+SUP-010,Supplier J,5,0.0136,0.9374

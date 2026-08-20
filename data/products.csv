@@ -1,0 +1,51 @@
+product_id,product_name,category,unit_cost,supplier_id
+PRD-0001,Automotive Item 001,Automotive Parts,285.23,SUP-005
+PRD-0002,Raw Item 002,Raw Materials,71.62,SUP-008
+PRD-0003,Raw Item 003,Raw Materials,59.04,SUP-003
+PRD-0004,Automotive Item 004,Automotive Parts,334.86,SUP-001
+PRD-0005,Raw Item 005,Raw Materials,236.61,SUP-001
+PRD-0006,Electronics Item 006,Electronics,283.49,SUP-005
+PRD-0007,Hardware Item 007,Hardware,382.97,SUP-010
+PRD-0008,Chemicals Item 008,Chemicals,318.09,SUP-002
+PRD-0009,Packaging Item 009,Packaging,277.68,SUP-005
+PRD-0010,Hardware Item 010,Hardware,280.49,SUP-008
+PRD-0011,Electronics Item 011,Electronics,153.37,SUP-003
+PRD-0012,Textiles Item 012,Textiles,17.35,SUP-008
+PRD-0013,Hardware Item 013,Hardware,219.49,SUP-004
+PRD-0014,Raw Item 014,Raw Materials,108.86,SUP-009
+PRD-0015,Packaging Item 015,Packaging,205.45,SUP-006
+PRD-0016,Hardware Item 016,Hardware,426.99,SUP-006
+PRD-0017,Textiles Item 017,Textiles,118.5,SUP-002
+PRD-0018,Automotive Item 018,Automotive Parts,31.03,SUP-005
+PRD-0019,Hardware Item 019,Hardware,142.13,SUP-009
+PRD-0020,Packaging Item 020,Packaging,148.21,SUP-001
+PRD-0021,Chemicals Item 021,Chemicals,331.63,SUP-008
+PRD-0022,Textiles Item 022,Textiles,279.4,SUP-005
+PRD-0023,Textiles Item 023,Textiles,392.38,SUP-008
+PRD-0024,Electronics Item 024,Electronics,332.83,SUP-007
+PRD-0025,Raw Item 025,Raw Materials,204.38,SUP-005
+PRD-0026,Chemicals Item 026,Chemicals,407.38,SUP-004
+PRD-0027,Chemicals Item 027,Chemicals,85.15,SUP-007
+PRD-0028,Hardware Item 028,Hardware,13.31,SUP-002
+PRD-0029,Chemicals Item 029,Chemicals,46.84,SUP-006
+PRD-0030,Chemicals Item 030,Chemicals,361.73,SUP-001
+PRD-0031,Raw Item 031,Raw Materials,232.01,SUP-007
+PRD-0032,Automotive Item 032,Automotive Parts,82.31,SUP-007
+PRD-0033,Raw Item 033,Raw Materials,251.52,SUP-001
+PRD-0034,Packaging Item 034,Packaging,77.85,SUP-008
+PRD-0035,Textiles Item 035,Textiles,348.77,SUP-005
+PRD-0036,Textiles Item 036,Textiles,224.19,SUP-008
+PRD-0037,Electronics Item 037,Electronics,191.75,SUP-001
+PRD-0038,Chemicals Item 038,Chemicals,152.15,SUP-002
+PRD-0039,Packaging Item 039,Packaging,315.88,SUP-005
+PRD-0040,Chemicals Item 040,Chemicals,182.18,SUP-002
+PRD-0041,Electronics Item 041,Electronics,45.65,SUP-004
+PRD-0042,Chemicals Item 042,Chemicals,60.77,SUP-007
+PRD-0043,Chemicals Item 043,Chemicals,481.03,SUP-002
+PRD-0044,Chemicals Item 044,Chemicals,454.47,SUP-007
+PRD-0045,Textiles Item 045,Textiles,350.45,SUP-002
+PRD-0046,Hardware Item 046,Hardware,134.4,SUP-002
+PRD-0047,Textiles Item 047,Textiles,484.65,SUP-006
+PRD-0048,Packaging Item 048,Packaging,389.82,SUP-008
+PRD-0049,Chemicals Item 049,Chemicals,359.01,SUP-002
+PRD-0050,Hardware Item 050,Hardware,225.78,SUP-003
