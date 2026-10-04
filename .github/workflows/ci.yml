@@ -1,0 +1,49 @@
+name: SupplyChain Dashboard CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Generate Dataset
+        run: |
+          python generate_data.py
+
+      - name: Verify Application Files
+        run: |
+          python -m py_compile app.py
+          python -m py_compile analysis.py
+          python -m py_compile generate_data.py
+
+      - name: Verify Streamlit Installation
+        run: |
+          streamlit --version
+
+      - name: CI Pipeline Successful
+        run: |
+          echo "SupplyChain Risk Dashboard CI pipeline completed successfully!"
