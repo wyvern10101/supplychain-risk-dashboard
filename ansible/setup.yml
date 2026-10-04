@@ -1,0 +1,61 @@
+---
+- name: Configure SupplyChain Risk Dashboard
+  hosts: app_servers
+  become: false
+
+  vars:
+    app_dir: "{{ playbook_dir }}/.."
+    python_bin: "{{ playbook_dir }}/../.venv/bin/python"
+
+  tasks:
+
+    - name: Display target machine
+      ansible.builtin.debug:
+        msg: "Configuring SupplyChain Risk Dashboard on {{ inventory_hostname }}"
+
+    - name: Check Python installation
+      ansible.builtin.command:
+        cmd: python3 --version
+      register: python_version
+      changed_when: false
+
+    - name: Display Python version
+      ansible.builtin.debug:
+        msg: "{{ python_version.stdout }}"
+
+    - name: Create application directory
+      ansible.builtin.file:
+        path: "{{ app_dir }}"
+        state: directory
+        mode: "0755"
+
+    - name: Create required data directory
+      ansible.builtin.file:
+        path: "{{ app_dir }}/data"
+        state: directory
+        mode: "0755"
+
+    - name: Create virtual environment
+      ansible.builtin.command:
+        cmd: python3 -m venv "{{ app_dir }}/.venv"
+        creates: "{{ app_dir }}/.venv/bin/python"
+
+    - name: Install Python dependencies
+      ansible.builtin.command:
+        cmd: "{{ app_dir }}/.venv/bin/pip install -r {{ app_dir }}/requirements.txt"
+      register: pip_install
+      changed_when: "'Successfully installed' in pip_install.stdout"
+
+    - name: Verify Streamlit installation
+      ansible.builtin.command:
+        cmd: "{{ app_dir }}/.venv/bin/streamlit --version"
+      register: streamlit_version
+      changed_when: false
+
+    - name: Display Streamlit version
+      ansible.builtin.debug:
+        msg: "{{ streamlit_version.stdout }}"
+
+    - name: Configuration completed
+      ansible.builtin.debug:
+        msg: "SupplyChain Risk Dashboard runtime configuration completed successfully."
