@@ -7,7 +7,13 @@ spec:
   selector:
     app: supplychain-dashboard
   ports:
-    - protocol: TCP
-      port: 8501
-      targetPort: 8501
-      nodePort: 30501
+  - name: http
+    protocol: TCP
+    port: 8501
+    targetPort: 8501
+    nodePort: 30501
+
+  - name: metrics
+    protocol: TCP
+    port: 8000
+    targetPort: 8000

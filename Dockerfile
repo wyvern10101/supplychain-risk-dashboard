@@ -15,5 +15,6 @@ COPY . .
 RUN python generate_data.py
 
 EXPOSE 8501
+EXPOSE 8000
 
-CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+CMD ["sh", "-c", "python metrics_server.py & streamlit run app.py --server.address=0.0.0.0 --server.port=8501"]
